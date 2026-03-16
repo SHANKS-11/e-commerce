@@ -1,0 +1,33 @@
+:root[data-theme='dark'] {
+  color-scheme: dark;
+}
+
+body[data-theme='dark'] {
+  background: #0f1115;
+  color: #e7e7e7;
+}
+
+body[data-theme='dark'] .bg-light,
+body[data-theme='dark'] .navbar.bg-light,
+body[data-theme='dark'] .card,
+body[data-theme='dark'] .border,
+body[data-theme='dark'] .product,
+body[data-theme='dark'] .bg-main-light {
+  background-color: #161a22 !important;
+  color: #e7e7e7 !important;
+}
+
+body[data-theme='dark'] .text-muted {
+  color: rgba(231, 231, 231, 0.7) !important;
+}
+
+body[data-theme='dark'] .form-control,
+body[data-theme='dark'] .form-select {
+  background: #0f1115;
+  border-color: rgba(255,255,255,0.15);
+  color: #e7e7e7;
+}
+
+body[data-theme='dark'] .dropdown-menu {
+  background: #161a22;
+}

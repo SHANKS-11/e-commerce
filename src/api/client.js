@@ -1,0 +1,16 @@
+import axios from 'axios'
+
+export const API_BASE_URL = 'https://ecommerce.routemisr.com'
+
+export const api = axios.create({
+  baseURL: API_BASE_URL,
+  headers: {
+    'Content-Type': 'application/json',
+  },
+})
+
+api.interceptors.request.use((config) => {
+  const token = localStorage.getItem('token')
+  if (token) config.headers.token = token // Route API expects header named `token`
+  return config
+})

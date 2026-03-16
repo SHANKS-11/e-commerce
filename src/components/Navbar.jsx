@@ -1,7 +1,7 @@
 import { Link, NavLink, useNavigate } from 'react-router-dom'
 import { useQuery } from '@tanstack/react-query'
 
-import logo from '../assets/freshcart-logo.svg'
+import logo from '../assets/luffy-logo.svg'
 import { useAuth } from '../hooks/useAuth.js'
 import { useTheme } from '../hooks/useTheme.js'
 import { api } from '../api/client.js'
@@ -39,8 +39,7 @@ export default function Navbar() {
     <nav className="navbar navbar-expand-lg bg-light border-bottom sticky-top">
       <div className="container">
         <Link className="navbar-brand d-flex align-items-center gap-2" to="/">
-          <img src={logo} alt="FreshCart" height="26" />
-          <span className="fw-semibold">FreshCart</span>
+          <img src={logo} alt="FreshCart" height="50" />
         </Link>
 
         <button
